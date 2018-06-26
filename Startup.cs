@@ -24,7 +24,7 @@ namespace Contoso
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<SchoolContext>(options => options.UseMySql("Server=localhost;Port=3306;Database=Contoso; User=root;Password=112358;")); 
+            services.AddDbContextPool<SchoolContext>(options => options.UseMySql("Server=localhost;Port=3306;Database=Contoso; User=root;Password=******;")); 
             services.AddMvc();
         }
 
